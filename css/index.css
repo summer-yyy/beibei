@@ -1,0 +1,22 @@
+#header{}
+#header .top-nav {height: 28px;background: #f4f4f4; border-bottom: 1px #e8e8e8 solid;}
+#header .top-nav .ulbox { width: 1000px; margin: 0 auto;position: relative;height: 28px;}
+#header .top-nav ul {position: absolute; top:0;right:0;}
+#header .top-nav ul li { float: left; line-height: 28px;color: #555; margin: 0 12px;}
+#header .top-nav ul li a:hover{text-decoration: underline;}
+#header .top-nav ul li.register a {color: #f00;}
+#header .top-nav ul li.seg{ margin: 7px 0; height: 15px; width: 1px; background: #ddd;}
+#header .main-logo{width: 1000px; margin: 0 auto; padding: 20px 0; position: relative;}
+#header .main-logo img.logo-l{ float: left;}
+#header .main-logo img.logo-r{ position: absolute;top: 25px;left: 455px;}
+#header .main-logo .shopping-car {float: right; width: 132px; height: 34px; background: #f00; line-height: 34px; font-size:16px ; color:#fff; margin-top:10px ;}
+
+/*main-nav*/
+.main-nav{ height: 38px; background: #ff647c;}
+.main-nav .main-nav-box { width: 1000px; line-height: 38px; margin: 0 auto;}
+.main-nav .main-nav-box ul li{ float: left; width: 100px; text-align: center;}
+.main-nav .main-nav-box ul li a{ color: #fff; font-weight: 900; width: 100px; display: block; float: left; font-size: 14px;}
+.main-nav .main-nav-box ul li a:hover{ background: #f34660;} 
+.main-nav .main-nav-box ul li a.cur{ background: #f34660;}
+.main-nav .main-nav-box ul li.mini-logo{ position: relative;}
+.main-nav .main-nav-box ul li.mini-logo img{position: absolute; top: -5px;right: 0px;}
