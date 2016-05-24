@@ -252,3 +252,29 @@ body, input, select, button, textarea { font-size: 12px;font-family:tahoma,arial
 .line_h38{line-height: 38px;}
 .line_h40{line-height: 40px;}
 
+.dot{ border: 1px solid #666;width: 2px;height: 2px;display: inline-block;background: #666;vertical-align: middle;margin: 0 5px 0 2px;overflow: hidden;}
+h3{font-size: 1.17em;}
+
+/*header*/
+#header{}
+#header .top-nav {height: 28px;background: #f4f4f4; border-bottom: 1px #e8e8e8 solid;}
+#header .top-nav .ulbox { width: 1000px; margin: 0 auto;position: relative;height: 28px;}
+#header .top-nav ul {position: absolute; top:0;right:0;}
+#header .top-nav ul li { float: left; line-height: 28px;color: #555; margin: 0 12px;}
+#header .top-nav ul li a:hover{text-decoration: underline;}
+#header .top-nav ul li.register a {color: #f00;}
+#header .top-nav ul li.seg{ margin: 7px 0; height: 15px; width: 1px; background: #ddd;}
+#header .main-logo{width: 1000px; margin: 0 auto; padding: 20px 0; position: relative;}
+#header .main-logo img.logo-l{ float: left;}
+#header .main-logo img.logo-r{ position: absolute;top: 25px;left: 455px;}
+#header .main-logo .shopping-car {float: right; color:#fff; margin-top:10px ;width: 132px; height: 34px; line-height: 34px; font-size:14px ;position: relative; }
+#header .main-logo .shopping-car .shpping-car-icon{ border: 2px solid #fff; height: 34px; width: 34px; line-height: 30px; text-align: center; border-radius: 18px; background: #444; color: #fff; position: absolute; left: -18px;}
+#header .main-logo .shopping-car span{ width: 132px; height: 34px; background: #f00; line-height: 34px;  display: block; text-align: center;background: #ff647c;border-radius: 10px;}
+
+/*footer*/
+
+#footer {margin-top:35px ; text-align:center;color: #666;}
+#footer .footer-nav{ border-top: 3px solid #FF5482;background: #555;padding: 10px 0;color: #ddd;}
+#footer .footer-nav a{ color: #ddd;}
+#footer .wrapper{ padding: 20px 0 40px;color: #999;}
+#footer .wrapper p { margin-top:8px ;}

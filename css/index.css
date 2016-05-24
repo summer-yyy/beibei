@@ -1,15 +1,3 @@
-#header{}
-#header .top-nav {height: 28px;background: #f4f4f4; border-bottom: 1px #e8e8e8 solid;}
-#header .top-nav .ulbox { width: 1000px; margin: 0 auto;position: relative;height: 28px;}
-#header .top-nav ul {position: absolute; top:0;right:0;}
-#header .top-nav ul li { float: left; line-height: 28px;color: #555; margin: 0 12px;}
-#header .top-nav ul li a:hover{text-decoration: underline;}
-#header .top-nav ul li.register a {color: #f00;}
-#header .top-nav ul li.seg{ margin: 7px 0; height: 15px; width: 1px; background: #ddd;}
-#header .main-logo{width: 1000px; margin: 0 auto; padding: 20px 0; position: relative;}
-#header .main-logo img.logo-l{ float: left;}
-#header .main-logo img.logo-r{ position: absolute;top: 25px;left: 455px;}
-#header .main-logo .shopping-car {float: right; width: 132px; height: 34px; background: #f00; line-height: 34px; font-size:16px ; color:#fff; margin-top:10px ;}
 
 /*main-nav*/
 .main-nav{ height: 38px; background: #ff647c;}
@@ -20,3 +8,48 @@
 .main-nav .main-nav-box ul li a.cur{ background: #f34660;}
 .main-nav .main-nav-box ul li.mini-logo{ position: relative;}
 .main-nav .main-nav-box ul li.mini-logo img{position: absolute; top: -5px;right: 0px;}
+
+.main-nav-box .search{ float: right;}
+.main-nav-box .search input.search-text{ border-radius: 2px; border: 1px solid #e6e6e6; height: 26px; line-height: 26px; width: 200px; padding: 0 5px; color: #666;}
+.main-nav-box .search a{ color: #fff}
+.main-nav-box .search i{ color: #fff;}
+.main-nav-box .search span{line-height: 26px;width: 200px; position: relative;}
+.main-nav-box .search span i {color: #666; right: 5px;font-size: 16px; top:2px; position: absolute;}
+.main-nav-box .search span i:hover{color: #f00;}
+
+
+/*container*/
+#container .container-top-nav{ width: 1000px; margin: 0 auto; position: relative;}
+#container .container-top-nav a{ display: inline-block; padding: 0 10px; margin: 0 12px 0 0; color: #999; height: 27px; border-bottom: 3px solid #fff; text-decoration: none; line-height: 27px;}
+#container .container-top-nav a:hover{ border-bottom: 3px solid #f00; }
+#container .container-top-nav a.hot { position: relative;}
+#container .container-top-nav a.hot img{ position: absolute; right: -15px; top: 0; }
+
+#container .container-top-nav .seg{ height: 21px; width: 1px; padding: 0; background: #ddd; margin: 5px 20px 0; display: inline-block; vertical-align: top;}
+#container .container-top-nav .age-sex:hover { border: 0;}
+#container .container-top-nav .tomorrow{ background: #f7f7f7; padding: 0 28px; color: #ff506b; font-size: 13px; position: absolute; right: 0; margin: 0;}
+#container .container-top-nav .tomorrow:hover{ border: 0;}
+
+/*banner*/
+
+#container .banner{ width: 100%; height: 320px; overflow: hidden; position: relative;}
+#container .banner ul li{ }
+#container .banner .banner-right { position: absolute; top: 0;left: 50%; width: 260px; margin-left: 270px;}
+#container .banner .banner-right ul li { float: left; height: 160px; cursor: pointer;width: 129px; text-align: center; background: #fff; border: 1px solid #ddd; position: relative;}
+#container .banner .banner-right ul li img{margin: 26px 15px 2px 15px;}
+#container .banner .banner-right ul li p{ line-height: 20px;}
+#container .banner .banner-right ul li div{ position: absolute; top:12px; left: 82px; text-align: center; width: 36px; height: 36px; border-radius: 18px; background: #f00; color: #fff; line-height: 36px;}
+#container .container-main{ width: 1000px; margin: 0 auto;}
+
+.container-main .container-main-l{ float: left; }
+.container-main .container-main-l .goods{ border: 1px solid #666; cursor: pointer;}
+.container-main .container-main-l .goods .goods-banner { float: left; width:550px; height: 257px; display: block;}
+.container-main .container-main-l .goods .goods-r { float: left; width:230px; height: 257px; position: relative; }
+.container-main .container-main-l .goods .goods-time{ height: 60px; line-height: 60px; padding-left: 15px; border-bottom: 1px dashed #ececec; color: #999; width: 230px;}
+.container-main .container-main-l .goods h3 span{ padding-left: 15px; margin: 15px 0 10px; display: inline-block; font-weight: 400}
+.container-main .container-main-l .goods .description { padding: 10px; height: 48px; overflow: hidden;width: 218px;color: #999; margin-left: 5px; line-height: 18px; position: absolute;}
+.container-main .container-main-l .goods .description:hover{height: auto; overflow: visible; border: 1px solid #efefef;  background: #fcfcfc; box-shadow: 0 0 2px #eee; z-index: 10;}
+.container-main .container-main-l .goods .goods-r p i {color: #ff506b; font-size: 12px;}
+.container-main .container-main-l .goods .goods-r p{ color: #999; line-height: 30px; margin: 55px 0 0 15px;}
+.container-main .container-main-l .goods .goods-r .btn-zhekou{ width: 213px; height: 30px; line-height: 30px; text-align: center; color: #ff4965; font-size: 14px; border: 1px solid #ff4965; border-radius: 2px; margin: 10px 0px 0px 8px;}
+.container-main .container-main-l .goods .goods-r .btn-zhekou:hover{color: #fff; background: #ff4965;}
