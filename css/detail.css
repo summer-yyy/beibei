@@ -1,0 +1,41 @@
+
+/*面包屑导航*/
+
+#container .top-nav{ width: 1080px; margin: 0 auto;color: #666; display: block; margin-top: 20px;}
+#container .top-nav a{ color: #666;}
+/*详情*/
+#container .main-detail { width: 1080px; margin: 0 auto;color: #666; height: 573px; border: 1px solid #ccc; margin-top: 20px;}
+#container .main-detail .main-detail-l{ padding: 0 20px; width: 400px; float: left;}
+#container .main-detail .main-detail-l .small-img ul{ margin-left: 20px;}
+#container .main-detail .main-detail-l .small-img ul li{ float: left; margin: 15px 10px 10px 0; }
+#container .main-detail .main-detail-l .small-img ul li.cur{ border: 1px solid red;}
+#container .main-detail .main-detail-l .small-img ul li img{ width: 70px; height:70px;}
+#container .main-detail .main-detail-m{ width: 490px; float: left;}
+#container .main-detail .main-detail-m .price{ padding: 0 0 20px 0; border-bottom: 1px dashed #ddd;}
+#container .main-detail .main-detail-m .price .zhekou{ background: ; border: 1px solid #66a600; background: #7dca00; border-radius: 2px; color: #fff; padding: 0 5px; margin: 0 0 0 10px;}
+#container .main-detail .main-detail-m .price .baoyou{ background: ; border: 1px solid #4b8ff5; background: #5c9dff; border-radius: 2px; color: #fff; padding: 0 5px; margin: 0 10px 0 10px;}
+#container .main-detail .main-detail-m .main-select { margin-top: 20px;}
+#container .main-detail .main-detail-m .main-select label{width: 65px; padding-top: 2px; text-align: right; color: #888; font-weight: 400;}
+#container .main-detail .main-detail-m .main-select span {padding-left: 90px; }
+#container .main-detail .main-detail-m .main-select span .jian{ padding: 0 5px; border: 1px solid #66a600; color: #fff; border-radius: 2px; background: #7dca00;}
+#container .main-detail .main-detail-m .main-select span .fan{ padding: 0 5px; border: 1px solid #ff8135; color: #fff; border-radius: 2px; background: #e66315;}
+#container .main-detail .main-detail-m .main-select div { position: relative; margin: 10px 0;}
+#container .main-detail .main-detail-m .main-select div label{ position: absolute; height: 100% ;}
+#container .main-detail .main-detail-m .main-select .choosecolor ul{ padding-left: 90px;}
+#container .main-detail .main-detail-m .main-select .choosecolor ul li{ display: inline-block; border: 1px solid #666; height: 35px; line-height: 35px; padding: 0 5px;}
+#container .main-detail .main-detail-m .main-select .choosecolor ul li span{ padding-left: 0;}
+#container .main-detail .main-detail-m .main-select .choosecolor ul li img{ width: 25px; height: 25px;}
+#container .main-detail .main-detail-m .main-select .choosesize ul{ padding-left: 90px;}
+#container .main-detail .main-detail-m .main-select .choosesize ul li{ display: inline-block; border: 1px solid #666; height: 35px; line-height: 35px; padding: 0 5px; margin-right: 5px;}
+#container .main-detail .main-detail-m .main-select .choosesize ul span{ padding-left: 0;}
+#container .main-detail .main-detail-m .main-select .choosenum .number{ padding-left: 90px;}
+#container .main-detail .main-detail-m .main-select .choosenum .number a{ color: #999; text-decoration: none;border: 1px #ccc solid; vertical-align: top;line-height: 25px; display: inline-block; width: 20px; text-align: center;}
+#container .main-detail .main-detail-m .main-select .choosenum .number input{ width: 30px; height: 25px;border: 1px #ccc solid; text-align: center;}
+#container .main-detail .main-detail-m .main-select .pay{ }
+#container .main-detail .main-detail-m .main-select .pay .qianggou{ border-radius: 4px; background: #ff5482; margin: 2px 0 0 88px; width: 150px; height: 44px; line-height: 44px; font-weight: 700; font-size: 18px; text-align: center; border: 1px solid #ff3c70; color: #fff; display: inline-block; text-decoration: none;}
+#container .main-detail .main-detail-r{ width: 188px; float: left; background: #f7f6f2;height: 571px;}
+#container .main-detail .main-detail-r .title{ padding: 10px 20px; line-height: 25px; font-size: 16px; background: #ececec; border-bottom: 1px solid #e5e5e5; border-top: 1px solid #f3f3f3; color: #656565;}
+#container .main-detail .main-detail-r .content{ padding: 15px 20px; border-bottom: 1px dashed #ebebeb;}
+#container .main-detail .main-detail-r .content label{ font-weight: 400;}
+#container .main-detail .main-detail-r .score{ padding: 30px 20px;}
+#container .main-detail .main-detail-r .score label{ font-weight: 400;}

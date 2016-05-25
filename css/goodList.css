@@ -1,0 +1,19 @@
+.banner{ height: 255px; wwidth: 100%; background: url(../img/banner/list-banner.jpg) no-repeat center;}
+
+/*中间的小导航*/
+#container .m-nav{ width: 1080px; margin: 0 auto; list-style: none; padding: 10px 0 10px 14px; border: 1px solid #ececec;}
+#container .m-nav ul{}
+#container .m-nav ul li{ float: left; margin-right: 18px; line-height: 22px; height: 22px;}
+#container .m-nav ul li a{ display: block; padding: 0 10px; color: #666;}
+#container .m-nav ul li a:hover{ background: #ff4965; color: #fff; text-decoration: none;}
+#container .m-nav ul li a.cur{background: #ff4965; color: #fff; text-decoration: none;}
+/*商品列表*/
+#container .main-list{ width: 1080px; margin: 0 auto;}
+#container .main-list ul li{ float: left;width: 255px;height: 320px; margin: 20px 20px 0 0; border: 1px solid #ececec; overflow: hidden;}
+#container .main-list ul li.list-no4{ margin-right: 0;}
+#container .main-list ul li .list-img img {width: 253px; height: 253px;}
+#container .main-list ul li .list-price .list-name{ white-space: nowrap; text-overflow: ellipsis; width: 170px; overflow: hidden; margin: 0px;}
+#container .main-list ul li .list-price{ padding: 10px;}
+#container .main-list ul li .list-price .list-price-l{ float: left;}
+#container .main-list ul li .list-price .list-price-r { border: 1px solid #ff4965; width: 60px; height: 47px; background: #fff; float: right; text-align: center;}
+#container .main-list ul li .list-price .list-price-r div{ width: 100%; background:#ff4965 ; color: #fff; line-height: 26px;}

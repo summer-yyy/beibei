@@ -24,12 +24,12 @@
 .fast-login{margin-top: 15px;  line-height: 30px;}
 .fast-login span{ float: left;}
 .fast-login a{ display: block; float: left;  width: 25px; height: 25px; margin-left:10px ;}
-.fast-login a.qq{background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) -1px 0;}
-.fast-login a.qq:hover{ background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) -29px 0;}
-.fast-login a.tb{background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) -59px 0;}
-.fast-login a.tb:hover{background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) -89px 0;}
-.fast-login a.wx{background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) -119px 0;}
-.fast-login a.wx:hover{background: url(../img/764d876bb3aa326726486d71ee891b66_173x24.png) -149px 0;}
+.fast-login a.qq{background: url(../img/fast-login.png) -1px 0;}
+.fast-login a.qq:hover{ background: url(../img/fast-login.png) -29px 0;}
+.fast-login a.tb{background: url(../img/fast-login.png) -59px 0;}
+.fast-login a.tb:hover{background: url(../img/fast-login.png) -89px 0;}
+.fast-login a.wx{background: url(../img/fast-login.png) -119px 0;}
+.fast-login a.wx:hover{background: url(../img/fast-login.png) -149px 0;}
 
 
 
