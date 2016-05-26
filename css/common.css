@@ -1,22 +1,46 @@
+a:hover{text-decoration: none;}
 /*header*/
 #header{}
 #header .top-nav {height: 28px;background: #f4f4f4; border-bottom: 1px #e8e8e8 solid;}
-#header .top-nav .ulbox { width: 1000px; margin: 0 auto;position: relative;height: 28px;}
+#header .top-nav .ulbox { width: 1080px; margin: 0 auto;position: relative;height: 28px;}
 #header .top-nav ul {position: absolute; top:0;right:0;}
-#header .top-nav ul li { float: left; line-height: 28px;color: #555; margin: 0 12px;}
+#header .top-nav ul li { float: left; line-height: 28px;color: #555; margin: 0 12px;height:28px; text-align: center; color: #555;}
+#header .top-nav ul li a{ color: #555;}
+#header .top-nav ul li.content{ width:94px; position: relative;z-index: 1;}
+#header .top-nav ul li.content div {display: block; position: absolute; top:22px; left: 1px; border: 1px solid #ddd; width: 92px; border-top: 0; z-index: 10; background: #fff; text-align: left; text-indent: 3px; display: none;}
+#header .top-nav ul li.content:hover a{background: #fff; border: 1px solid #ddd; padding: 5px;  border-bottom: 0;}
+#header .top-nav ul li.content:hover div{ display: block;}
+#header .top-nav ul li.content i{color: #FF5482;}
+#header .top-nav ul li.content span i { color: #555;}
+#header .top-nav ul li.dropdown:hover div{display: block;}
+#header .top-nav ul li.dropdown{ width: 58px; }
+#header .top-nav ul li.dropdown:hover a.dropdown-a{ border: 1px solid #ddd;background: #fff; z-index: 11; padding:3px 5px; border-bottom: 0; position: relative;}
+#header .top-nav ul li.dropdown div{width: 220px; position: absolute; top: 22px; left: -80px; padding:10px; background: #fff; z-index: 10; border: 1px solid #ddd; display: none;}
+#header .top-nav ul li.dropdown .wechat{float: left; width: 135px; text-align: center; color: #666; border-right: 1px dotted #CDCBCE; padding: 5px; }
+#header .top-nav ul li.dropdown .social{ width: 30px; vertical-align: top; display: inline-block; }
+#header .top-nav ul li.dropdown .social dd{ margin-top: 10px;}
 #header .top-nav ul li a:hover{text-decoration: underline;}
 #header .top-nav ul li.register a {color: #f00;}
 #header .top-nav ul li.seg{ margin: 7px 0; height: 15px; width: 1px; background: #ddd;}
-#header .main-logo{width: 1000px; margin: 0 auto; padding: 20px 0; position: relative;}
+#header .main-logo{width: 1080px; margin: 0 auto; padding: 20px 0; position: relative;}
 #header .main-logo img.logo-l{ float: left;}
 #header .main-logo img.logo-r{ position: absolute;top: 25px;left: 455px;}
 #header .main-logo .shopping-car {float: right; color:#fff; margin-top:10px ;width: 132px; height: 34px; line-height: 34px; font-size:14px ;position: relative; }
 #header .main-logo .shopping-car .shpping-car-icon{ border: 2px solid #fff; height: 34px; width: 34px; line-height: 30px; text-align: center; border-radius: 18px; background: #444; color: #fff; position: absolute; left: -18px;}
 #header .main-logo .shopping-car span{ width: 132px; height: 34px; background: #f00; line-height: 34px;  display: block; text-align: center;background: #ff647c;border-radius: 10px;}
-
+#header .main-logo .shopping-car:hover .nav-cart-detail{ display: block;}
+#header .main-logo .shopping-car .nav-cart-detail { width: 340px; position: absolute; top:35;left:-208px; height: 200px; border: 1px solid red; background: #fff; z-index: 10; display: none;}
+#header .main-logo .shopping-car .nav-cart-detail .nav-cart-detail-top{
+	height: 120px; border-bottom: 1px dashed rgb(255, 84, 130);
+}
+#header .main-logo .shopping-car .nav-cart-detail .nav-cart-detail-bottom span{
+	margin: 0; padding: 0; display: inline; background: #fff; color:#666; margin-left:15px;
+}
+#header .main-logo .shopping-car .nav-cart-detail .nav-cart-detail-bottom a{ padding: 4px 12px; font-size: 13px; color: #fff; border-radius: 4px; border-width: 1px 1px 2px; border-style: solid; border-color: rgb(255, 60, 112) rgb(255, 60, 112) rgb(229, 51, 99); float: right; margin-right: 15px; margin-top: 6px; height: 30px; line-height: 18px; background: rgb(255, 84, 130);display: block;}
+#header .main-logo .shopping-car .nav-cart-detail .nav-cart-detail-bottom a:hover{ text-decoration: none; }
 /*main-nav*/
 .main-nav{ height: 38px; background: #ff647c;}
-.main-nav .main-nav-box { width: 1000px; line-height: 38px; margin: 0 auto;}
+.main-nav .main-nav-box { width: 1080px; line-height: 38px; margin: 0 auto;}
 .main-nav .main-nav-box ul li{ float: left; width: 100px; text-align: center;}
 .main-nav .main-nav-box ul li a{ color: #fff; font-weight: 900; width: 100px; display: block; float: left; font-size: 14px;}
 .main-nav .main-nav-box ul li a:hover{ background: #f34660;} 
@@ -32,7 +56,12 @@
 .main-nav-box .search span i {color: #666; right: 5px;font-size: 16px; top:2px; position: absolute;}
 .main-nav-box .search span i:hover{color: #f00;}
 
-
+/*侧面导航*/
+#side-nav{ margin-left: 550px; position: fixed; z-index: 2000; left: 50%; width: 70px; background: #fff; border: 1px solid #e6e6e6; opacity: 0.5;}
+#side-nav:hover{opacity: 1;}
+#side-nav .shopcar .count{ color: #fff; font-size: 11px; position: absolute; right: 10px; text-align: center; top: 4px; width: 14px; line-height: 14px; height: 14px; border-radius: 50%; background: #7DCA00;}
+#side-nav .shopcar,#side-nav .telphone,#side-nav .kefu,#side-nav .totop{ width: 70px; height: 43px;color: #ff647c; text-align: center; cursor: pointer; line-height: 43px; font-size: 18px; position: relative; border-bottom: 1px  #ff647c solid;}
+#side-nav ul li:hover{ background: #ff647c;; opacity: 1; color: #fff;}
 /*footer*/
 
 #footer {margin-top:35px ; text-align:center;color: #666;}

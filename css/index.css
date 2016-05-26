@@ -1,6 +1,7 @@
 /*container*/
 #container { background: #f7f6f2;;}
-#container .container-top-nav{ width: 1000px; margin: 0 auto; position: relative; background: #fff;}
+#container .container-top-nav-box { background: #fff;} 
+#container .container-top-nav{ width: 1080px; margin: 0 auto; position: relative; background: #fff;}
 #container .container-top-nav a{ display: inline-block; padding: 0 10px; margin: 0 12px 0 0; color: #999; height: 27px; border-bottom: 3px solid #fff; text-decoration: none; line-height: 27px;}
 #container .container-top-nav a:hover{ border-bottom: 3px solid #f00; }
 #container .container-top-nav a.hot { position: relative;}

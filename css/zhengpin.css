@@ -1,0 +1,6 @@
+#container .banner{ background: #f1f1f1; height: 591px; text-align: center;}
+#container .box-1{ height: 1600px; background: #c89df4; }
+.block{ width: 100%; position: relative;}
+.box-1 .purple-box{ margin: 0 auto; width: 1080px;}
+.title{ left:50%; margin-left: -290px; top:10px;}
+.box-1 img{ position: absolute; display: block;}
