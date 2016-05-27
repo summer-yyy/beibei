@@ -1,0 +1,44 @@
+{
+     "menu1":{
+                 "h3":"热门HOT",
+                 "p1":"电影魔兽系列",
+                 "p2":"疯狂动物成",
+				 "p3":"迪斯尼系列",
+				 "p4":"愤怒的小鸟&nbsp;&nbsp;牛仔衬衫",
+				 "p5":"蝙蝠侠大战超人",
+				 "p6":"Stage满减&nbsp;&nbsp;印花t恤",
+				 "p7":"宇宙上合作款",
+				 
+				 //2
+				 "h4":"上装TOPS",
+                 "p11":"上装t恤&nbsp;&nbsp;POLO",
+                 "p22":"背心&nbsp;&nbsp;长袖t恤&nbsp;&nbsp;卫衣",
+				 "p33":"西装&nbsp;&nbsp;毛衣",
+				 "p44":"短袖衬衫&nbsp;&nbsp;长袖衬衫",
+				 
+				 //3
+				 "h5":"下装PANTS",
+				 "p1_1":"针织休闲裤&nbsp;&nbsp;牛仔中裤",
+				 "p2_2":"休闲中裤&nbsp;&nbsp;针织中裤",
+				 "p3_3":"牛仔长裤&nbsp;&nbsp;休闲长裤",
+				 "p4_4":"针织运动裤&nbsp;&nbsp;西裤",
+				 "p5_5":"收口慢跑裤",
+				 //5 
+				 "menu_x":"menu_x_list_right",
+				 "img":"../i_Pic/list1.jpg",
+				 "img_class":"menu_x_img",
+				 "i1":"../i_Pic/jpg1.jpg",
+				 "i2":"../i_Pic/jpg2.jpg",
+				 "i3":"../i_Pic/jpg3.jpg",
+				 "i4":"../i_Pic/jpg4.jpg",
+				 "i5":"../i_Pic/jpg5.jpg",
+				 "i6":"../i_Pic/jpg6.jpg",
+				 "i7":"../i_Pic/jpg7.jpg",
+				 "i8":"../i_Pic/jpg8.jpg"
+				 
+     
+             }
+
+
+
+}

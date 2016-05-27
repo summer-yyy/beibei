@@ -1,3 +1,5 @@
+
+//动态加载头部
 function addHtml(url,targetId){
 	$.ajax({
 			type:"get",
@@ -8,3 +10,9 @@ function addHtml(url,targetId){
 			}
 		});
 }
+;$(function(){
+	$("#side-nav .totop").click(function(){
+		$("html,body").scrollTop(0);
+	})
+
+});

@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="../css/base.css"/>		
 		<link rel="stylesheet" href="../css/common.css"/>
 		<link rel="stylesheet" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/slide.css"/>
+		<script src="../js/libs/slide.js"></script>		
 	</head>
 	<body>
 		<!--header-->
@@ -17,23 +19,8 @@
 		</div>
 		<!--侧面导航-->
 		<div id="side-nav">
-			<ul>
-				<li class="shopcar">
-					<i class="glyphicon glyphicon-shopping-cart"></i>
-					<div class="count">
-						0
-					</div>
-				</li>
-				<li class="telphone">
-					<i class="glyphicon glyphicon-phone-alt"></i>
-				</li>
-				<li class="kefu">
-					<i class="glyphicon glyphicon-user"></i>
-				</li>
-				<li class="totop">
-					<i class="glyphicon glyphicon-chevron-up"></i>
-				</li>
-			</ul>
+			
+			ajax 引入
 			
 		</div>
 		<!--container-->
@@ -67,15 +54,36 @@
 				</p>
 			
 			</div>
-			
+			<!--背景轮播图，使用插件-->
+		
 			<div class="banner">
-				<ul>
-					<li><img src="../img/banner/banner1_1400x320.png"/></li>
-					<li><img src="../img/banner/banner2_1400x320.jpg"</li>
-					<li><img src="../img/banner/banner3_1400x320.jpg"></li>
-					<li><img src="../img/banner/banner4_1400x320.jpg"/></li>
-				</ul>
-				
+			<div class="ck-slide">
+			<ul class="ck-slide-wrapper">
+				<li>
+					<a href="http://www.jq22.com/"><img src="../img/banner/banner1_1400x320.png" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="http://www.jq22.com"><img src="../img/banner/banner2_1400x320.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="../img/banner/banner3_1400x320.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="../img/banner/banner4_1400x320.jpg" alt=""></a>
+				</li>
+			</ul>
+			
+			<div class="ck-slidebox">
+				<div class="slideWrap">
+					<ul class="dot-wrap">
+						<li class="current"><em>1</em></li>
+						<li><em>2</em></li>
+						<li><em>3</em></li>
+						<li><em>4</em></li>						
+					</ul>
+				</div>
+			</div>
+		</div>
 				<div class="banner-right">
 					<ul>
 						<li>
@@ -102,6 +110,10 @@
 					</ul>
 				</div>
 			</div>
+			
+			<!--轮播结束-->
+			
+			<!--主体，商品-->
 			<div class="container-main clear">
 				<div class="padt-20 padb-10 color66 font20">
 					<span class="font-b">今日特卖</span>
@@ -246,5 +258,91 @@
 	<script>
 		addHtml("common/header.html","#header");
 		addHtml("common/footer.html","#footer");
+		addHtml("common/side-nav.html","#side-nav");
+		var message = $.get("../data/goods.json",function(msg){
+			return msg;
+		});
+// 右侧logo切换
+		$(".container-main-r-top .tab-side li").click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+			var index = $(this).index();
+			if( index == 1){
+				$(".container-main-r-top .logos-side li img").attr("src","../img/minilogo_200x100.png");
+			}
+			else{
+				$(".container-main-r-top .logos-side li img").attr("src","../img/03577309159163_200x100.png");
+			}
+		});
+		
+//		轮播图
+		$('.ck-slide').ckSlide({
+			autoPlay: true;
+		});
+//		获取AJAX
+		$.get("../data/goods.json",function(msg){
+			var x = Math.floor(Math.random()*15+1);
+//			更换广告那的小图
+			for(var y=0;y<4;y++){
+				addBannerR(y,msg["goods"+x].src,msg["goods"+x].price);
+				x++;
+			}
+//			换右侧列表的图片
+			$("ul.tab-class li").click(function(){
+				$(this).addClass("cur").siblings().removeClass("cur");
+				var index = $(this).index()+2;
+				$(".goodlist-side li").find("img").attr("src",msg["goods"+index].src).parent().find(".description").html(msg["goods"+index].name).parent().find(".price span").eq(0).html(msg["goods"+index].price);
+			})
+			
+		for(i in msg){
+			var name = msg[i].name;
+			var src = msg[i].src;
+			var price = msg[i].price;
+			var discription = msg[i].discription;
+			$(".container-main-l").append(
+				
+					'<div class="goods clear">'+
+						'<div class="goods-banner">'+
+							'<img src='+src+'  />'+
+						'</div>'+
+						'<div class="goods-r">'+
+							'<div class="goods-time">'+
+								'<i class="glyphicon glyphicon-time"></i>'+
+								'剩余：5天5时5分5秒'+
+							'</div>'+
+							'<h3>'+
+								'<span>藤之木工房儿童节焕新季</span>'+
+							'</h3>'+
+							'<div class="description">'+
+                        		discription+                   
+							'</div>'+
+							'<p>' +
+								'<i class="glyphicon glyphicon-bookmark"></i>'+
+								'满99减20元'+
+							'</p>'+
+							'<div class="btn-zhekou">'+
+								'<span>'+(price/100)+'</span>'+
+								'折起特卖 >>'+
+							'</div>'+
+						'</div>'+
+					'</div>'
+				)
+			}
+		$(".loading").hide();
+		
+		});
+		
+//右侧栏更换内容,message?
+//	$("ul.tab-class li").click(function(){
+//		$(this).addClass("cur").siblings().removeClass("cur");
+//		var index = $(this).index()+2;
+//		$(".goodlist-side li").find("img").attr("src",message["goods"+index].src).parent().find(".description").html(message["goods"+index].discription);
+//	})
+
+
+//	banner-right 更换内容
+		function addBannerR(index,src,price){
+			$(".banner-right ul li").eq(index).find("img").attr("src",src).parent().find("div").html("&yen;"+price);
+			
+		}
 	</script>
 </html>

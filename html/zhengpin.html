@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta charset="utf-8">
+		<title>正品保证</title>
 		<script src="../js/libs/jquery.js"></script>
-		<script src="../js/libs/bootstrap.js"></script>
-		<script src="../js/common.js"></script>
+		<script src="../js/libs/bootstrap.js"></script>		
 		<link rel="stylesheet" href="../css/bootstrap.css"/>
 		<link rel="stylesheet" href="../css/base.css"/>		
 		<link rel="stylesheet" href="../css/common.css"/>
 		<link rel="stylesheet" href="../css/zhengpin.css"/>
+		<script src="../js/common.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -17,30 +17,58 @@
 		</div>
 		<!--主体-->
 		<div id="container">
-			<div class="banner block">
-				<img src="../img/zhengpin/block-gary-bg6.png"/>
+			<div class="banner">
+				<div>
+					<img src="../img/zhengpin/block-gary-bg6.png"/>
+				</div>
+			</div>
+			<div class="nav-bar dis-no">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 			</div>
 			<div class="box-1 block">
 				<div class="purple-box">
-					<img src="../img/zhengpin/block-purple-arrow.png"  />
-					<img src="../img/zhengpin/block-purple-item-1.png"/>
-					<img src="../img/zhengpin/block-purple-item-2.png"/>
-					<img src="../img/zhengpin/block-purple-item-3.png"/>
-					<img src="../img/zhengpin/block-purple-item-4.png"/>
-					<img src="../img/zhengpin/block-purple-pointimg.2.png"/>
-					<img src="../img/zhengpin/block-purple-pointlist.2.png"/>
-					<img style="top: 286px; left:50px;" src="../img/zhengpin/block-purple-subtitle-11.png"/>
-					<img src="../img/zhengpin/block-purple-subtitle-2.png"/>
-					<img class="title" src="../img/zhengpin/block-purple-title.png"/>
+					<img  style="top: 515px; margin-left: 20px; left:50%;" src="../img/zhengpin/block-purple-arrow.png"  />
+					<img style="top: 970px; margin-left: -400px; left:50%;" src="../img/zhengpin/block-purple-item-1.png"/>
+					<img style="top: 970px; margin-left: 100px; left:50%;" src="../img/zhengpin/block-purple-item-2.png"/>
+					<img style="top: 1260px; margin-left: -400px; left:50%;" src="../img/zhengpin/block-purple-item-3.png"/>
+					<img style="top: 1260px; margin-left: 100px; left:50%;" src="../img/zhengpin/block-purple-item-4.png"/>
+					<img style="top: 378px; margin-left: 100px; left:50%;" src="../img/zhengpin/block-purple-pointimg.2.png"/>
+					<img style="top: 378px; margin-left: -400px; left:50%;" src="../img/zhengpin/block-purple-pointlist.2.png"/>
+					<img style="top: 286px; left:50%; margin-left: -500px;" src="../img/zhengpin/block-purple-subtitle-11.png"/>
+					<img style="top: 870px; margin-left: -500px; left:50%;" src="../img/zhengpin/block-purple-subtitle-2.png"/>
+					<img style="top: 68px; margin-left: -290px; left:50%;"  class="title" src="../img/zhengpin/block-purple-title.png"/>
 				</div>
 			</div>
 			<div class="box-2 block">
+				<div class="blue-box">
+					<img style="top: 68px; margin-left: -290px; left:50%;" src="../img/zhengpin/block-blue-title4.png"/>
+					<img style="top: 280px; margin-left: -400px; left:50%;" src="../img/zhengpin/block-blue-icon-3.png"/>
+					<img style="top: 340px; margin-left: 100px; left:50%;" src="../img/zhengpin/block-blue-text-5.png"/>
+					
+				</div>
 			</div>
 			<div class="box-3 block">
+				<div class="red-box">
+					<img style="top: 280px; margin-left: -470px; left:50%;" src="../img/zhengpin/block-red-icon-4.png"/>
+					<img style="top: 620px; margin-left: -184px; left:50%;" src="../img/zhengpin/block-red-text-4.png"/>
+					<img style="top: 68px; margin-left: -290px; left:50%;" src="../img/zhengpin/block-red-title3.png"/>
+				</div>
 			</div>
 			<div class="box-4 block">
+				<div class="green-box">
+					<img  style="top: 250px; margin-left: -500px; left:50%;" src="../img/zhengpin/block-green-text-3.png"/>
+					<img  style="top: 68px; margin-left: -355px; left:50%;" src="../img/zhengpin/upload_094d15187ef29d7f2ec72ec939519b81_710x139.png"/>
+				</div>
 			</div>
 			<div class="box-5 block">
+				<img style="top: 68px; margin-left: -246px; left:50%;" src="../img/zhengpin/block-yellow-title3.png"/>
+				<img style="top: 255px; margin-left: -490px; left:50%;" src="../img/zhengpin/block-yellow-text-2.png"/>
 			</div>
 		</div>
 		
@@ -49,7 +77,29 @@
 		</div>
 	</body>
 	<script>
-		addHtml("common/header.html","#header")
-		addHtml("common/footer.html","#footer")
-	</script>
+		addHtml("common/header.html","#header");
+		addHtml("common/footer.html","#footer");
+		
+		$(".nav-bar ul li").click(function(){
+			$(this).css("background","url(../img/zhengpin/navbar5.png) no-repeat 0 center");
+			var index = $(this).index();
+			$(this).css("background-position-x",-index*208+"px").siblings().css("background","none");
+			$(window).scrollTop($(".block").eq(index).offset().top-110)
+		});
+		
+		$(window).scroll(function(){
+			var height =$(window).scrollTop();
+			if(height<$(".block").eq(0).offset().top-110){
+				$(".nav-bar").hide();
+			}
+			$(".block").each(function(){
+				if(height >=$(this).offset().top-110){
+					$(".nav-bar").show();
+					$(".nav-bar ul li").css("background","url(../img/zhengpin/navbar5.png) no-repeat 0 center");
+					var index = $(this).index(".block");
+			$(".nav-bar ul li").eq(index).css("background-position-x",-index*208+"px").siblings().css("background","none");
+				}				
+			});	
+		});
+</script>
 </html>

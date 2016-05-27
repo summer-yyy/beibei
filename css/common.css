@@ -61,7 +61,9 @@ a:hover{text-decoration: none;}
 #side-nav:hover{opacity: 1;}
 #side-nav .shopcar .count{ color: #fff; font-size: 11px; position: absolute; right: 10px; text-align: center; top: 4px; width: 14px; line-height: 14px; height: 14px; border-radius: 50%; background: #7DCA00;}
 #side-nav .shopcar,#side-nav .telphone,#side-nav .kefu,#side-nav .totop{ width: 70px; height: 43px;color: #ff647c; text-align: center; cursor: pointer; line-height: 43px; font-size: 18px; position: relative; border-bottom: 1px  #ff647c solid;}
-#side-nav ul li:hover{ background: #ff647c;; opacity: 1; color: #fff;}
+#side-nav ul li:hover{ background: #ff647c; opacity: 1; color: #fff;}
+#side-nav ul li:hover span{ display: block;}
+#side-nav ul li span {position: absolute; display: none; width: 70px; height: 43px; top: 0; left: 0; font-size: 12px; z-index: 10;background: #ff647c; }
 /*footer*/
 
 #footer {margin-top:35px ; text-align:center;color: #666;}

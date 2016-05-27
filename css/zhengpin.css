@@ -1,6 +1,20 @@
-#container .banner{ background: #f1f1f1; height: 591px; text-align: center;}
-#container .box-1{ height: 1600px; background: #c89df4; }
+#container .banner{ background: #f1f1f1; height: 591px;}
+#container .banner div{ position: relative; width: 1080px; margin: 0 auto; height: 600px;}
+#container .banner img{ position: absolute; left: 50%; margin-left: -500px;} 
+#container .box-1{ height: 1600px; background: #c89df4; width: 100%; position: relative;}
 .block{ width: 100%; position: relative;}
 .box-1 .purple-box{ margin: 0 auto; width: 1080px;}
 .title{ left:50%; margin-left: -290px; top:10px;}
-.box-1 img{ position: absolute; display: block;}
+#container .block img{ position: absolute; display: block;}
+
+#container .box-2{ height: 630px; background: #cedcff;}
+
+.box-2 .blue-box,.red-box ,.greenbox{ margin: 0 auto; width: 1080px;}
+#container .box-3{ height: 720px; background: #ffc4d3;}
+
+#container .box-4{ background: #a2cbb9; height: 790px;}
+#container .box-5{ background: #f5d9a9;height: 680px;padding-bottom: 100px;}
+#footer {margin-top: 0 ;}
+.nav-bar{ position: fixed; height: 110px;background: #ededed; width: 100%; left: 0; top: 0; z-index: 100;}
+#container .nav-bar ul{ width: 1040px;  height: 110px; background: url(../img/zhengpin/navbar-lock5.png) no-repeat center; z-index: 20; margin: 0 auto;}
+#container .nav-bar ul li{ cursor: pointer; float: left; width: 208px; height: 110px;}

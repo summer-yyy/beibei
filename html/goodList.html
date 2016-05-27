@@ -5,8 +5,8 @@
 	<title>商品列表</title>
 	<script src="../js/libs/jquery.js"></script>
 	<script src="../js/libs/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/goodList.css"/>
 	<script src="../js/common.js"></script>
@@ -15,6 +15,11 @@
 	<div id="header">
 		你看不见的头部
 	</div>
+		<div id="side-nav">
+			
+			ajax 引入
+			
+		</div>
 	<div class="banner">
 		
 	</div>
@@ -135,6 +140,7 @@
 			</ul>
 		</div>
 	</div>
+
 	<div id="footer">
 		你看不见的尾部
 	</div>
@@ -142,5 +148,42 @@
 <script>
 	addHtml("common/header.html","#header");
 	addHtml("common/footer.html","#footer");
+	addHtml("common/side-nav.html","#side-nav");
+	var count = 0;
+	$.get("../data/goods.json",function(msg){
+		for(i in msg){
+			var name = msg[i].name;
+			var src = msg[i].src;
+			var price = msg[i].price;
+			$(".main-list ul").append("<li>"+
+					"<div class='list-img'>"+
+						"<img src="+src+"/>"+
+					"</div>"+
+					"<div class='list-price'>"+
+						 
+                       "<div class='list-price-l'>"+
+							"<p class='list-name'>"+
+								name+
+							"</p>"+
+							"<span class='price colorf4d' >"+
+								"¥<b class='font20'>"+price+"</b>"+
+							"</span>"+
+	                        "<span class='font-thro'>¥"+parseInt(price*1.5)+"</span>"+
+						"</div>"+
+						"<div class='list-price-r'>"+
+							"<span class='colorf4d'> 20%</span>"+
+							"<div>限300件</div>"+
+						"</div>"+
+					"</div>"+
+					
+				"</li>");
+			count++;
+			if(count==4){
+				$(".main-list ul li:last").addClass("list-no4");
+				count=0;
+			}
+		}
+	});
+	
 </script>
 </html>
